@@ -1,0 +1,20 @@
+<!-- add-task-modal.component.html -->
+
+<form [formGroup]="taskForm">
+    <div class="modal-header">
+        <h4>Add your task</h4>
+    </div>
+    <div class="modal-body">
+        <label for="taskName">Task Name:</label>
+        <input id="taskName" type="text" formControlName="taskName" />
+    
+        <label for="taskDescription">Description:</label>
+        <input id="taskDescription" type="text" formControlName="taskDescription" />
+
+        <label for="taskDescription">Description:</label>
+        <input id="taskDescription" type="text" formControlName="taskDescription" />
+    </div>
+    <div class="modal-footer">
+        <button type="submit" [disabled]="taskForm.invalid">Add Task</button>
+    </div>
+</form>

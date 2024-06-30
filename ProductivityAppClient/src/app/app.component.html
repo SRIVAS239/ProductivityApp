@@ -1,0 +1,41 @@
+<body>
+  <p>To do list</p>
+  <div class="listbody container">
+    <div class="listbody-header row">
+      <p>Task List</p>
+
+      <div class="add-task">
+        <!-- Modalbutton -->
+        <button type="button" class="btn btn-primary" (click)="openTaskModal()">
+          Add Task
+        </button>
+        <app-add-task-modal></app-add-task-modal>
+        
+      <!--modal till here-->
+        
+      </div>
+    </div>
+    <!-- Task list -->
+    <div class="listbody-body row">
+      <div class="listbody-left col">
+        <ul class="list-group">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+          <li class="list-group-item">A fourth item</li>
+          <li class="list-group-item">And a fifth one</li>
+        </ul>
+      </div>
+      <div class="listbody-right col">
+        <ul class="list-group">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+          <li class="list-group-item">A fourth item</li>
+          <li class="list-group-item">And a fifth one</li>
+        </ul>
+      </div>
+    </div>
+    
+  </div>
+</body>
